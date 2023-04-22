@@ -4,7 +4,7 @@ const bodyParse = require('body-parser');
 const path = require('path');
 const date = require(__dirname + "/Date.js");
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 let items = ["Buy Food", "Coock Food", "Eat Food"];
 let workItem = [];
